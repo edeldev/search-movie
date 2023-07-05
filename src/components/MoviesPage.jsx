@@ -26,7 +26,7 @@ const Fondo = styled.div`
   }
 
   @media (max-width: 600px) {
-    background-position: 73% center;
+    background-position: 45% center;
   }
 `;
 
