@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #071516;
+  font-family: 'Lato', sans-serif;
+}
+
+.slider-container {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.glider-slide {
+  cursor: pointer;
+}
