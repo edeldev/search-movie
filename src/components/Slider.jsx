@@ -58,14 +58,14 @@ const Slider = () => {
   }, [popularMovies, psychologicalMovies]);
 
   const fetchPopularMovies = async () => {
-    const result = await fetch("http://www.omdbapi.com/?s=popular&apikey=fc1fef96");
+    const result = await fetch("https://www.omdbapi.com/?s=popular&apikey=fc1fef96");
     const data = await result.json();
     const movies = data.Search || [];
     setPopularMovies(movies);
   };
 
   const fetchPsychologicalMovies = async () => {
-    const result = await fetch("http://www.omdbapi.com/?s=psychological&apikey=fc1fef96");
+    const result = await fetch("https://www.omdbapi.com/?s=psychological&apikey=fc1fef96");
     const data = await result.json();
     const movies = data.Search || [];
     setPsychologicalMovies(movies);

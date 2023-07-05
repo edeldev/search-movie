@@ -76,7 +76,7 @@ const Movie = ({ peliculaSeleccionada, setCargando }) => {
 
   const fetchMovieDetails = async (imdbID) => {
     setCargando(true)
-    const result = await fetch(`http://www.omdbapi.com/?i=${imdbID}&apikey=fc1fef96`);
+    const result = await fetch(`https://www.omdbapi.com/?i=${imdbID}&apikey=fc1fef96`);
     const movieDetails = await result.json();
     setMovieDetails(movieDetails);
     setCargando(false)
